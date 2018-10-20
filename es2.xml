@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!-- creiamo una struttura errata per vedere xmlLint che cosa ci dice -->
+<test>
+<ciao>
+<cc> 
+</ciao>
+</cc>
+
+</test>

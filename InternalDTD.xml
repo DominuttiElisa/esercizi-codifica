@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!DOCTYPE TEI [
+<!--DTD interna-->
+<!ELEMENT TEI (header, facsimile?, text+) >
+<!ELEMENT header (#PCDATA) >
+<!ELEMENT facsimile (#PCDATA) >
+<!ELEMENT text (#PCDATA|seg)*>
+<!ELEMENT seg (#PCDATA)>
+
+<!ATTLIST header
+     type CDATA #FIXED "intestazione" 
+     lang CDATA #IMPLIED >
+
+<!--NB: nelle slide mancava il tipo di source: ho aggiunto io CDATA-->
+<!ATTLIST facsimile 
+    source CDATA #REQUIRED  
+    ref IDREF #IMPLIED >
+
+<!ATTLIST text
+     type NMTOKENS #IMPLIED 
+     id ID #REQUIRED >
+
+
+ ]>
+
+<!--inizio documento XML-->
+ <TEI>
+ hello
+ <header>
+big bang theory 
+ </header>
+
+ <text> 
+    non funziona?
+    <seg> a quanto pare</seg>
+ </text>
+
+ </TEI>

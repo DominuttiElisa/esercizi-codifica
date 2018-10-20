@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--valido il mio documento con DTD esterna-->
+<!DOCTYPE TEI SYSTEM "externalDTD.dtd">
+<TEI>
+ hello
+ <header>
+big bang theory 
+ </header>
+
+ <text> 
+    non funziona?
+    <seg> a quanto pare</seg>
+ </text>
+
+ </TEI>

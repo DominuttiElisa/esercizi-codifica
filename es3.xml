@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!-- creo una struttura non ben formata per vedere xmlLint che cosa risponde
+
+<test>
+<ciao>
+<cc> 
+</ciao>
+</cc>
+
+-->
+
+<!-- correggo la struttura
+<ciao> 
+<cc> Buongiorno mondo! </cc>
+</ciao>
+-->
+
+<!--aggiungo un figlio a un elemento e un fratello sibling ad un elemento-->
+<!--h2 è figlio dell'elemento cc , l'elemento cc e l'elemento p sono fratelli siblings-->
+<ciao> 
+<cc> Buongiorno mondo! 
+
+<h2> oggi è bel tempo e sono felicissima</h2>
+
+</cc>
+
+<p> The End</p>
+</ciao>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<!-- Dichiarazione XML: ricordati di non scrivere commenti prima-->
+
+<!-- scriviamo un commento riguardante il documento:
+This document contains data on Codifica di Testi
+Filename: prologo.xml
+Author: Elisa
+Date: 8-10-2018
+ -->
+
+<!-- inseriamo qualche elemento-->
+
+ <ciao>
+ <cc> </cc>
+ </ciao>
