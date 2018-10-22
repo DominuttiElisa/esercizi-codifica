@@ -1,0 +1,64 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc xml:lang=”it”> 
+            <titleStmt> 
+             <title> Codifico "Dizionarista"</titolo>
+             <author> Elisa Dominutti</author>
+            </titleStmt>
+
+            <pubblicationStmt>
+                 informazioni sulla pubblicazione
+            </pubblicationStmt>
+
+        
+            <sourceDesc> 
+                <p> info sulla sorgente </p>
+            </sourceDesc>
+
+        </fileDesc>
+    </teiHeader>
+
+    <text>
+         <body>
+             <p> some text here </p>
+            
+            <entry n="1">
+                <!--infor legate al lemma, alla forma-->
+                <form type="lemma">  
+                    <orth> Dizionarista</orth>
+                    <pron notation="ipa"> dittsjiona'rista </pron>
+                    <syll> di|zio!na|rì|sta </syll>
+                </form>
+
+                <!-- gruppo per le info grammaticali-->
+                <gramGrp> 
+                    <pos> n.</pos> <!--nome-->
+                    <gen> m. </gen>  <!-- maschile-->
+                    <per> sing.</per>
+                </gramGrp>
+
+                <!-- etimologia-->
+                <etym> 
+                    da
+                    <mentioned> dizionario</mentioned> 
+                </etym>
+
+                <!-- sensi-->
+                <sense n="s1">   <!-- dichiaro ed identifico il primo senso-->
+                    <usg type="dom"> (letteratura) </usg>   <!-- dominio di utilizzo: ambito della linguistica-->
+                    <def> chi redige un dizionario   <!-- definizione del vocabolario-->
+                    <desc> (professione)</desc> 
+                    </def> 
+                </sense>
+
+                <xr type="syn">
+                <ref> lessicografo</ref>
+                <ref> vocabolarista</ref>
+                </xr>
+
+            </entry>
+
+        </body>
+    </text>
+        
+</TEI>

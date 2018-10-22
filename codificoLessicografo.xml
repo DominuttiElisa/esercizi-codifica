@@ -1,0 +1,85 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc xml:lang=”it”> 
+            <titleStmt> 
+             <title> Il mio primo dizionario</titolo>
+             <author> Elisa Dominutti</author>
+            </titleStmt>
+
+            <pubblicationStmt>
+                 informazioni sulla pubblicazione
+            </pubblicationStmt>
+
+        
+            <sourceDesc> 
+                <p> info sulla sorgente </p>
+            </sourceDesc>
+
+        </fileDesc>
+    </teiHeader>
+
+    <text>
+         <body>
+             <p> some text here </p>
+            
+            <entry n="1">
+                <!--infor legate al lemma, alla forma-->
+                <form type="lemma">  
+                    <orth> lessicografo</orth>
+                    <pron notation="ipa"> lessi'kografo </pron>
+                    <syll> les|si|cò|gra|fo </syll>
+                </form>
+
+                <!-- gruppo per le info grammaticali-->
+                <gramGrp> 
+                    <pos> n.</pos> <!--nome-->
+                    <gen> m. </gen>  <!-- maschile-->
+                </gramGrp>
+
+                <!-- etimologia-->
+                <etym> 
+                    dal <lang> greco tardo </lang>   <!-- lang mi avverte che sto usando un'altra lingua-->
+                    <mentioned> λεξικογράϕος </mentioned> composto di  <!-- mention serve per indicare terminimenzionati in un'etimologia-->
+                    <mentioned>  λεξικόν </mentioned> ossia
+                    <gloss> "lessico" </gloss> e     <!-- gloss per una glossa/definzione per una parola o sintagma-->
+                    <mentioned> γράϕος</mentioned> ovvero
+                    <gloss>"grafo" </gloss>
+                </etym>
+
+                <!-- sensi-->
+                <sense n="s1">   <!-- dichiaro ed identifico il primo senso-->
+                    <usg type="dom"> (linguistica) </usg>   <!-- dominio di utilizzo: ambito della linguistica-->
+                    <def> chi si occupa di lessicografia </def>   <!-- definizione del vocabolario-->
+                    <cit type="example">   <!-- esempio che contestualizza il senso 1-->
+                        <quote> Francesco Sabatini è un linguista, lessicografo e presidente onorario dell'Accademia della Crusca </quote>
+                    </cit>
+                </sense>
+
+                <sense  n="s2">
+                <usg type="dom"> (linguistica) </usg>>
+                <def> colui che contribuisce alla compilazione di un dizionario </def>
+                 <cit type="example"> 
+                 <quote> Tullio de mauro è stato un lessicografo </quote> 
+                 </cit>
+                
+                <!--sinonimi-->
+                <xr type="syn">
+                <ref> dizionarista</ref>
+                <ref> vocabolarista</ref>
+                </xr>
+
+                <!-- riferimenti per le parole derivate da "lessicografo"-->
+                <re type="derived"> 
+                <form>
+                <orth>lessicografia</orth>
+                </form>
+
+                 
+                </sense>
+
+            </entry>
+
+        </body>
+    </text>
+        
+</TEI>

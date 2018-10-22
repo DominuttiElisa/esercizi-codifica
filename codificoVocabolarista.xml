@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc xml:lang=”it”> 
+            <titleStmt> 
+             <title> Codifico "Vocabolarista"</titolo>
+             <author> Elisa Dominutti</author>
+            </titleStmt>
+
+            <pubblicationStmt>
+                 informazioni sulla pubblicazione
+            </pubblicationStmt>
+
+        
+            <sourceDesc> 
+                <p> info sulla sorgente </p>
+            </sourceDesc>
+
+        </fileDesc>
+    </teiHeader>
+
+    <text>
+         <body>
+             <p> some text here </p>
+            
+            <entry n="1">
+                <!--infor legate al lemma, alla forma-->
+                <form type="lemma">  
+                    <orth>Vocabolarista</orth>
+                    <pron notation="ipa"> vokabola'rista </pron>
+                    <syll>vo|ca|bo|la|rì|sta</syll>
+                </form>
+
+                <!-- gruppo per le info grammaticali-->
+                <gramGrp> 
+                    <pos> n.</pos> <!--nome-->
+                    <gen> m. </gen>  <!-- maschile -->
+                    <per> sing.</per>
+                </gramGrp>
+
+                <!-- etimologia-->
+                <etym> 
+                    da
+                    <mentioned> vocabolario</mentioned> 
+                </etym>
+
+                <!-- sensi-->
+                <sense n="s1">   <!-- dichiaro ed identifico il primo senso-->
+                    <def> chi compone un dizionario </def>   <!-- definizione del vocabolario-->
+                </sense>
+
+                <!--sinonimi-->
+                <xr type="syn">
+                <ref> lessicografo</ref>
+                </xr>
+
+            </entry>
+
+        </body>
+    </text>
+        
+</TEI>
