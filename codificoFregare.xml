@@ -1,0 +1,89 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc xml:lang=”it”> 
+            <titleStmt> 
+             <title> Codifica entità "Fregare"</titolo>
+             <author> Elisa Dominutti</author>
+            </titleStmt>
+
+            <pubblicationStmt>
+                 informazioni sulla pubblicazione
+            </pubblicationStmt>
+
+        
+            <sourceDesc> 
+                <p> info sulla sorgente </p>
+            </sourceDesc>
+
+        </fileDesc>
+    </teiHeader>
+
+    <text>
+         <body>
+             <p> some text here </p>
+            
+            <entry n="1">
+                <!--info legate al lemma, alla forma-->
+                <form type="lemma">  
+                    <orth> fregare</orth>
+                    <pron notation="ipa"> fre'gare </pron>
+                    <syll> fre|gà|re </syll>
+                </form>
+            
+            <!-- riferimenti per le parole derivate da "fregare"-->
+                <re type="derived"> 
+                <form>
+                <orth>fregarsi</orth>
+                </form>
+
+                <form>
+                <orth>fregatura</orth>
+                 </form>
+
+                <form>
+                <orth>sfregare</orth>
+                </form>
+
+                </re>
+                <!-- gruppo per le info grammaticali -->
+                <gramGrp> 
+                    <pos> v.</pos> <!-- verbo -->
+                    <subc> transitive </subc> <!-- transitivo -->
+                </gramGrp>
+
+                <!-- etimologia -->
+                <etym> 
+                    dal <lang> latino </lang>   <!-- lang mi avverte che sto usando un'altra lingua-->
+                    <mentioned> fricare</mentioned> 
+                </etym>
+
+                <!-- sensi -->
+                <!-- senso 1 -->
+                <sense n="s1">   <!-- dichiaro ed identifico il primo senso-->
+                    <def> fare dei freghi </def>   <!-- definizione del vocabolario-->
+                    <cit type="example">   <!-- esempio che contestualizza il senso 1-->
+                        <quote> Avendo preso male le misure,fregò la portiera dell'automobile contro la colonna dell'ingresso del garage </quote>
+                    </cit>
+                </sense>
+
+                <!-- senso 2 -->
+                <sense  n="s2">
+                <usg type="reg"> linguaggio popolare</usg>> <!-- dominio di utilizzo-->
+                <def> tirare un bidone </def>
+                 <cit type="example"> 
+                 <quote> Ti ho Fregato!</quote> 
+                 </cit>
+                 <cit type="example"> 
+                 <quote> Il baro lo fregò di brutto calando un poker d'assi alla fine dell'ultima mano </quote> 
+                 </cit>
+
+    
+                </sense>
+
+
+            </entry>
+
+        </body>
+    </text>
+        
+</TEI>
