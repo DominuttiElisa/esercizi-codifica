@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TEI>
+    <teiHeader>
+      <fileDesc>
+          <titleStmt> 
+            <title> Cartolina da Edimburgo</title> 
+            <author> Elisabetta e Sofia</author>
+          </titleStmt>
+          <publicationStmt> -- contenuto -- </publicationStmt>
+          <sourceDesc> Cartolina compilata da due amiche della ricevente </sourceDesc>
+      </fileDesc>
+
+    </teiHeader>
+
+    <text>
+      <front> </front>
+
+        <body>
+            <div type="verso">
+                <div type="message"> <!-- testo de.strutturato: messaggio-->
+                    <p>Un caro saluto dalla Scozia! :)</p>
+                    <p> (LOL)</p>
+                   
+                    <signed>Fila </signed> <!--elemento per la firma-->
+                    <signed>Sofi </signed> 
+                     <p> PS: Ti vogliamo bene quanto è vero che siamo persone estremamente originali!</p>
+                </div>
+
+                <div type="destination"> <!--testo strutturato-->
+                    <ab>   <!--info relative ai francobolli/stampe/pubblicità ecc.-->
+                        <stamp type="publicity">Fotografia cartolina realizzata da Ian Mills  </stamp>
+                        <stamp type="postmark">Circular mark specifying <mentioned>ABERDEEN MAIL CENTRE</mentioned> </stamp>
+                        <stamp type="postage"> Stamp with Inverness Castle for Internal Postcard </stamp>
+                    </ab>
+
+                    <address> <!--info relative al destinatario-->
+                        <addrLine>Elisa Dominutti</addrLine>
+                        <addrLine>Via Landi 10</addrLine>
+                        <addrLine>Udine 33100</addrLine>
+                        <addrLine>UDINE</addrLine>
+                    </address>
+                </div>
+            </div>
+        </body>
+
+        <back>  </back>
+    </text>
+</TEI>
