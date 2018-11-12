@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--"http://delivery.acm.org/10.1145/1670000/1667889/p27-malakasiotis.pdf?ip=93.37.138.234&amp;id=1667889&amp;acc=OPEN&amp;key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&amp;__acm__=1542014440_d753a97486e90bdd8df3423f2ea0c869" -->
+
+<TEI>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+             <title>Articolo scientifico: Paraphrase Recognition Using Machine Learning to Combine Similarity Measures</title>
+             <author> AProdromos Malakasiotis </author>
+            </titleStmt>
+
+            <publicationStmt> 
+                <publisher> Department of Informatics: Athens University of Economics and Business</publisher>
+                <pubPlace> Patission 76, GR-104 34 Athens, Greece </pubPlace>
+            </publicationStmt>
+            <sourceDesc>  Articolo in inglese di Machine Learning preso da google Scholar</sourceDesc>
+        </fileDesc>
+
+    </teiHeader>
+
+<text>
+  <front> </front>
+
+<body xml:lang="en">
+    <div type="section">
+
+        <head>Abstract</head>
+        <p>This paper presents three methods that can be used to recognize paraphrases. They all employ string similarity measures ap- plied to 
+        shallow abstractions of the input sentences, and a Maximum Entropy clas- sifier to learn how to combine the result- ing features. Two of the
+        methods also ex- ploit WordNet to detect synonyms and one of them also exploits a dependency parser. </p>
+        <p>We experiment on two datasets, the MSR paraphrasing corpus and a dataset that we automatically created from the MTC cor- pus. Our system 
+        achieves state of the art or better results. </p>
+        
+   
+    </div>
+    <div type="section">
+
+        <head> Introduction </head>
+        <p>Recognizing or generating semantically equiva- lent phrases is of significant importance in many natural language applications. In question answering, 
+        for example, a question may be phrased dif- ferently than in a document collection (e.g., <q> “Who is the author of War and Peace?”</q> vs. “Leo Tol- stoy is the 
+        writer of War and Peace.”), and taking such variations into account can improve system performance significantly (Harabagiu et al., 2003; Harabagiu and Hickl, 2006).
+        A paraphrase gener- ator, meaning a module that produces new phrases or patterns that are semantically equivalent (or al- most equivalant) to a given input phrase or pattern
+        (e.g., “X is the writer of Y” - “X wrote Y” - “Y waswrittenbyX”-“X istheauthorofY”, or “X produces Y ” - “X manufactures Y ” - “X is the manufacturer of Y ”) can be used to 
+        pro- duce alternative phrasings of the question, before matching it against a document collection. </p>
+        <p> Unlike paraphrase generators, paraphrase rec- ognizers decide whether or not two given phrases (or patterns) are paraphrases, possibly by general- izing over many different training pairs of phrases.</p> 
+        <p>
+        Paraphrase recognizers can be embedded in para- phrase generators to filter out erroneous generated paraphrases; but they are also useful on their own. In question answering,
+         for example, they can be used to check if a pattern extracted from the ques- tion (possibly by replacing named entities by their semantic categories and turning the question into a statement) 
+         matches any patterns extracted from candidate answers. As a further example, in text summarization, especially multi-document sum- marization, a paraphrase recognizer can be used to check if
+        a sentence is a paraphrase of any other sentence already present in a partially constructed summary.
+        Note that, although “paraphrasing” and “textual entailment” are sometimes used as synonyms, we use the former to refer to methods that generate or recognize semantically equivalent (or almost equivalent)
+        phrases or patterns, whereas in textual entailment (Dagan et al., 2006; Bar-Haim et al., 2006; Giampiccolo et al., 2007) the expressions or patterns are not necessarily semantically equiva- lent; it suffices
+        if one entails the other, even if the reverse direction does not hold. For example, “Y was written by X” textually entails “Y is the work of X”, but the reverse direction does not neces- sarily hold (e.g., if Y is a statue); 
+        hence, the two sentences are not paraphrases. In this paper, we focus on paraphrase recogni- tion. We propose three methods that employ string similarity measures, which are applied to several abstractions of a pair of input 
+        phrases (e.g., the phrases themselves, their stems, P O S tags). The scores returned by the similarity measures are used as features in a Maximum Entropy (ME) classifier (Jaynes, 1957; Good, 1963), which learns to sepa- rate 
+        true paraphrase pairs from false ones. Two of our methods also exploit WordNet to detect syn- onyms, and one of them uses additional features to measure similarities of grammatical relations
+        obtained by a dependency parser.1 Our experi- ments were conducted on two datasets: the pub- licly available Microsoft Research Paraphrasing corpus (Dolan et al., 2004) and a dataset that we constructed from the M T C corpus.2
+         The experi- mental results show that our methods perform very well. Even the simplest one manages to achieve state of the art results, even though it uses fewer linguistic resources than other reported systems. The other two, 
+         more elaborate methods perform even better. Section 2 presents the three methods, and sec- tion 3 our experiments. Section 4 covers related work. Section 5 concludes and proposes further work.
+        
+        </p>
+        <!-- many more paragraphs here -->
+    </div>
+
+    <div type="section">
+        <p>
+        During training, the first method, called INIT, is
+        given a set <formula> {(S1,1, S1,2, y1) , . . . , (Sn,1, Sn,2, yn)} </formula>,
+        where Si,1 and Si,2 are sentences (more gener-
+        ally, phrases), yi = 1 (positive class) if the
+        two sentences are paraphrases, and yi = −1
+        (negative class) otherwise. Each pair of sen-
+        tences (Si,1 , Si,2 ) is converted to a feature vec-
+        tor vi, whose values are scores returned by sim-
+        ilarity measures that indicate how similar Si,1
+        and Si,2 are at various levels of abstraction. </p>
+        <p>
+        The vectors and the corresponding categories
+        <formula>  {(v ,y ),...,(z,y )} </formula> are given as input to the 1i nn
+        ME classifier, which learns how to classify new vectors ⃗v, corresponding to unseen pairs of sen- tences (S1, S2).
+        We use nine string similarity measures: Leven- shtein distance (edit distance), Jaro-Winkler dis- tance, Manhattan distance, Euclidean distance, co-
+        sine similarity, n-gram distance (with n = 3), matching coefficient, Dice coefficient, and Jac- card coefficient. To save space, we do not repeat the
+        definitions of the similarity measures here, since they are readily available in the literature and they are also summarized in our previous work (Malakasiotis and Androutsopoulos, 2007).
+        For each pair of input strings (S1, S2), we form ten new pairs of strings 􏰂s1, s1􏰃 , . . . , 􏰂s10, s10􏰃
+        corresponding to ten different levels of abstraction of S1 and S2, and we apply the nine similarity measures to the ten new pairs, resulting in a to- tal of 90 measurements. These measurements
+        are then included as features in the vector ⃗v that cor- responds to (S ,S ). The 􏰂si ,si 􏰃 pairs are:        
+        </p>
+        <p>
+         <list>
+            <item>s1,s12 : two strings consisting of the original tokens of S1 and S2, respectively, with the original order of the to- kens maintained;</item>
+            <item>􏰂s2 , s2 􏰃 : as in the previous case, but now the tokens are replaced by their stems;</item>
+            <item>􏰂s3 , s3 􏰃 : as in the previous case, but now the tokens are replaced by their part-of-speech (POS) tags;</item>
+            <item> 􏰂s4 , s4 􏰃 : as in the previous case, but now the tokens are replaced by their soundex codes;</item>
+            <item> [...]</item>
+        </list>
+        </p>
+    
+    </div>
+
+    <div type="section"> [...] </div>
+
+</body>
+
+<back> </back>
+
+</text>
+</TEI>
