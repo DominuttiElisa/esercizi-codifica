@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<TEI>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+             <title>Frammento di lettera: Vincenzo Bellini scrive a Carlo Pepoli</title>
+             <author> Vincenzo Bellini </author>
+            </titleStmt>
+
+            <publicationStmt>  <!--contenuto --> </publicationStmt>
+            <sourceDesc>  <!--contenuto--> </sourceDesc>
+        </fileDesc>
+
+    </teiHeader>
+
+    <!--collegamento con il facsimile-->
+    <pb facs="#page1"/> 
+    <facsimile> 
+     <surface xml:id="page1" > 
+        <graphic url='LL1.16_0001.jpg' width='1265px' height='1639px' >
+
+        <zone ulx="200" uly="194" lrx="942" lry="281">
+        <note> Linea 1 </note> </zone>
+    
+        <zone ulx="322" uly="347" lrx="1220" lry="431" > 
+        <note> Linea 2</note> </zone>
+
+        <zone ulx="155" uly="493" lrx="1157" lry="595" >
+        <note> Linea 3</note> </zone>
+    
+        <zone ulx="167" uly="639" lrx="1127" lry="727" >
+            <note> Linea 4</note> </zone>
+
+        <zone ulx="155" uly="801" lrx="1127" lry="902" >
+        <note> Linea 5</note> </zone>
+
+        <zone ulx="155" uly="955" lrx="1219" lry="1089" >
+        <note> Linea 6</note> </zone>
+
+        <zone ulx="156" uly="1130" lrx="1190" lry="1216" >
+        <note> Linea 7</note> </zone>
+
+        <zone ulx="142" uly="1274" lrx="1216" lry="1351" >
+         <note> Linea 8</note> </zone>
+
+        <zone ulx="133" uly="1399" lrx="1209" lry="1463" >
+        <note> Linea 9 </note> </zone>
+
+        <zone ulx="126" uly="1489" lrx="1159" lry="1535" >
+         <note> Linea 10 </note> </zone>
+
+        <zone ulx="692" uly="1562" lrx="1174" lry="1591" >
+        <note> Linea contenente la firma</note> </zone>   
+        
+        </graphic> 
+     </surface>
+    </facsimile>
+
+    <text> 
+    <front> </front>
+
+    <body>
+ 
+    <div xml:id="contenutoLettera">
+    <opener> 
+    <date> lunedì 26: </date>  <choice> <abbr> Puteau <am>_</am> </abbr> <expan> Puteau<ex>x</ex>  </expan> </choice> R: iy Ry madame le Nevilly </opener>
+
+    <p> Mi caro Carluccio
+    avendo inteso l'intero Sonetto
+    e mandando  in esso quella cosetta, desidererei che tu
+    t'incomodasti a venire 'a 
+    Puteau<gap/> per tutto finire, e
+    nell'intanto tempo darmi la
+    sortita di Valeria, se è <hyphenation eol="all">termi-
+    nata. </hyphenation> T'aspetto in qual giorno
+    ed in qual'ora vorrai -  <closer> <salute> addio </salute>
+    <signed> <abbr> Mons </abbr> <expan> Monsieur </expan> Vincenzo </signed> </closer> </p>
+    </div>
+
+    </body>
+
+    <back> </back>
+
+    </text>
+</TEI>
+    
